@@ -6,7 +6,7 @@
   .sidebar-wrapper {
     flex: 1;
     height: 100%;
-    background: $color1;
+    background: $darkest;
     display: flex;
     justify-content: flex-end;
   }
@@ -42,18 +42,18 @@
 
         &:hover {
           color: $color5;
-          background-color: darken($color1, 5%);
+          background-color: darken($darkest, 5%);
           transition: all 100ms linear;
         }
 
         &.selected {
-          background: darken($color1, 2%);
+          background: darken($darkest, 2%);
           border-radius: 4px 0 0 0;
         }
       }
 
       ul {
-        background: darken($color1, 4%);
+        background: darken($darkest, 4%);
         border-radius: 0 0 0 4px;
 
         a {
@@ -61,12 +61,12 @@
 
           &.selected {
             color: $color5;
-            background-color: $color4;
+            background-color: $vibrant;
             border-bottom: 0;
             border-radius: 0;
 
             &:hover {
-              background-color: lighten($color4, 5%);
+              background-color: lighten($vibrant, 5%);
             }
           }
         }
@@ -86,7 +86,7 @@
     padding-left: 25px;
 
     h2 {
-      color: $color2;
+      color: $lightest;
       font-size: 24px;
       line-height: 28px;
       font-weight: 400;
@@ -96,7 +96,7 @@
     & > p {
       font-size: 14px;
       line-height: 18px;
-      color: $color2;
+      color: $lightest;
       margin-bottom: 20px;
 
       strong {
@@ -109,7 +109,7 @@
       margin: 20px 0;
       border: 0;
       background: transparent;
-      border-bottom: 1px solid $color1;
+      border-bottom: 1px solid $darkest;
     }
   }
 
@@ -173,16 +173,16 @@
       text-transform: uppercase;
       font-size: 12px;
       font-weight: 500;
-      border-bottom: 2px solid $color1;
+      border-bottom: 2px solid $darkest;
 
       &:hover {
         color: $color5;
-        border-bottom: 2px solid lighten($color1, 5%);
+        border-bottom: 2px solid lighten($darkest, 5%);
       }
 
       &.selected {
-        color: $color4;
-        border-bottom: 2px solid $color4;
+        color: $vibrant;
+        border-bottom: 2px solid $vibrant;
       }
     }
   }
@@ -204,7 +204,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-    color: $color2;
+    color: $lightest;
   }
 
   &:first-child {

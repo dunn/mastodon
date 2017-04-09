@@ -1,12 +1,12 @@
 .activity-stream {
   clear: both;
-  box-shadow: 0 0 15px rgba($color8, 0.2);
+  box-shadow: 0 0 15px rgba($black, 0.2);
 
   .entry {
     background: $color5;
 
     .detailed-status.light, .status.light {
-      border-bottom: 1px solid $color2;
+      border-bottom: 1px solid $lightest;
     }
 
     &:last-child {
@@ -43,7 +43,7 @@
         font-size: 14px;
 
         .status__relative-time {
-          color: $color3;
+          color: $lighter;
         }
       }
     }
@@ -52,7 +52,7 @@
       display: block;
       max-width: 100%;
       padding-right: 25px;
-      color: $color1;
+      color: $darkest;
     }
 
     .status__avatar {
@@ -82,28 +82,28 @@
 
       strong {
         font-weight: 500;
-        color: $color1;
+        color: $darkest;
       }
 
       span {
         font-size: 14px;
-        color: $color3;
+        color: $lighter;
       }
     }
 
     .status__content {
-      color: $color1;
+      color: $darkest;
 
       a {
-        color: $color4;
+        color: $vibrant;
       }
 
       a.status__content__spoiler-link {
         color: $color5;
-        background: $color3;
+        background: $lighter;
 
         &:hover {
-          background: lighten($color3, 8%);
+          background: lighten($lighter, 8%);
         }
       }
     }
@@ -146,12 +146,12 @@
 
         strong {
           font-weight: 500;
-          color: $color1;
+          color: $darkest;
         }
 
         span {
           font-size: 14px;
-          color: $color3;
+          color: $lighter;
         }
       }
     }
@@ -167,25 +167,25 @@
     }
 
     .status__content {
-      color: $color1;
+      color: $darkest;
 
       a {
-        color: $color4;
+        color: $vibrant;
       }
 
       a.status__content__spoiler-link {
         color: $color5;
-        background: $color3;
+        background: $lighter;
 
         &:hover {
-          background: lighten($color3, 8%);
+          background: lighten($lighter, 8%);
         }
       }
     }
 
     .detailed-status__meta {
       margin-top: 15px;
-      color: $color3;
+      color: $lighter;
       font-size: 14px;
       line-height: 18px;
 
@@ -288,7 +288,7 @@
   }
 
   .media-spoiler {
-    background: $color3;
+    background: $lighter;
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -304,7 +304,7 @@
     z-index: 2;
 
     &:hover {
-      background: darken($color3, 5%);
+      background: darken($lighter, 5%);
     }
 
     span {
@@ -326,7 +326,7 @@
     padding-left: (48px + 14px*2);
     padding-bottom: 0;
     margin-bottom: -4px;
-    color: $color3;
+    color: $lighter;
     font-size: 14px;
     position: relative;
 
@@ -336,7 +336,7 @@
     }
 
     .status__display-name.muted strong {
-      color: $color3;
+      color: $lighter;
     }
   }
 
