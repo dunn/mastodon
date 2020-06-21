@@ -92,14 +92,12 @@ redis:
 
 persistence:
   assets:
-    accessModes:
-      - ReadWriteOnce
+    accessMode: ReadWriteOnce
     resources:
       requests:
         storage: 100Gi
   system:
-    accessModes:
-      - ReadWriteOnce
+    accessMode: ReadWriteOnce
     resources:
       requests:
         storage: 10Gi
