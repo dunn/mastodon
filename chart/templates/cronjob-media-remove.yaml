@@ -53,9 +53,9 @@ spec:
                   valueFrom:
                     secretKeyRef:
                       {{- if .Values.postgresql.enabled }}
-                      name: {{ .Release.Name }}-postgresql
-                      {{- else }}
                       name: {{ template "mastodon.fullname" . }}-postgresql
+                      {{- else }}
+                      name: {{ .Values.postgresqlHostname }}
                       {{- end }}
                       key: postgresql-password
                 - name: "REDIS_PASSWORD"
